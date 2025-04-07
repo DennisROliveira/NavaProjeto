@@ -31,7 +31,7 @@ Clone este repositório:
 
 git clone -b develop https://github.com/DennisROliveira/NavaProjeto.git
 
-======================================================================================================================== 
+======================================================================================================================================================================================== 
 Para abrir o projeto Navegue até a pasta do back-end:
 
 Se você tiver o Maven instalado, use o comando: -mvn clean install 
