@@ -1,0 +1,23 @@
+version: '3.8'
+services:
+  db:
+    image: postgres:13
+    container_name: pessoa_db
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: pessoa_db
+    ports:
+      - "5432:5432"
+    networks:
+      - pessoa-network
+    volumes:
+      - pessoa_db_data:/var/lib/postgresql/data
+
+networks:
+  pessoa-network:
+    driver: bridge
+
+volumes:
+  pessoa_db_data:
+    driver: local
